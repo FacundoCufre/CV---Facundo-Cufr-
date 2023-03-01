@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #fcb7af 0%, #fcb7af 3%, #f8f8f8 10%);
+}
+
+header{
+    height: 270px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+header .pic-container{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: #f3cdc9;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .pic-container .pic{
+    height: 244px;
+    width: 244px;
+    border-radius: 50%;
+    background-image: url(./img/DSC_6789.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    width: 100%;
+    height: 150px;
+    margin-right: 75px;
+    background-color: #f0f0f0;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    box-shadow: -40px 20px 0px -3px #fcb7af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav span {
+    font-size: 100px;
+    font-family: 'Gabriela', serif;
+    color: #fcb7af;
+}
+
+header nav ul {
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+header nav ul li{
+    padding-right: 40px;
+}
+
+.gral-container{
+    height: calc(100% - 270px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.gral-container .info{
+    height: 100%;
+    width: 270px;
+}
+
+.gral-container .info nav{
+    width: 100%;
+    height: 100%;
+}
+
+.gral-container .info nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+
+.gral-container .info nav ul li{
+    list-style: none;
+    font-size: 28px;
+    margin-top: 10px;
+    padding-left: 20px;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+}
+
+.gral-container .info nav ul li:hover{
+    padding-left: 5px;
+    border-left: 25px solid #c7c6c6;
+}
+
+.gral-container .info nav ul .active{
+    padding-left: 5px;
+    border-left: 25px solid #000;
+}
+
+.gral-container .info nav ul .active:hover{
+    padding-left: 5px;
+    border-left: 25px solid #000;
+}
+
+.gral-container .container-info{
+    height: 100%;
+    width: calc(100% - 270px);
+}
+
+.gral-container .container-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gral-container .container-info .selected{
+    height: 100%;
+    width: 100%;
+    display: flex
+}
+
+.gral-container .container-info .selected .info-section-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-right: 100px;
+}
+
+.info-section-1 div{
+    height: 50%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section-1 div h3{
+    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+}
+
+.info-section-1 div span{
+    font-size: 20px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.selected .info-section-2, .selected .info-section-3, .selected .info-section-4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-right: 100px;
+}
+
+.info-section-2 div, .info-section-3 div, .info-section-4 div{
+    height: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section-2 div h3, .info-section-3 div h3, .info-section-4 div h3{
+    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+}
+
+.info-section-2 div span, .info-section-3 div span, .info-section-4 div span{
+    font-size: 20px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.gral-container .container-info .not-selected{
+    display: none;
+}
